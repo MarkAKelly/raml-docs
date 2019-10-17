@@ -1,0 +1,175 @@
+#%RAML 1.0 Library
+
+uses:
+  types: https://developer.service.hmrc.gov.uk/api-documentation/assets/common/modules/types.raml
+
+
+traits:
+#400 Errors
+  formatNino:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              formatNino:
+                description: The format of the supplied NINO field is not valid
+                value:
+                  code: FORMAT_NINO
+  incorrectOrEmptyBody:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              incorrectOrEmptyBody:
+                description: An empty or non-matching body was submitted
+                value:
+                  code: RULE_INCORRECT_OR_EMPTY_BODY_SUBMITTED
+  formatStartDate:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              formatStartDate:
+                description: The format of the accounting period start date is invalid
+                value:
+                  code: FORMAT_START_DATE
+  formatEndDate:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              formatEndDate:
+                description: The format of the accounting period end date is invalid
+                value:
+                  code: FORMAT_END_DATE
+  formatTypeOfBusiness:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              formatTypeOfBusiness:
+                description: The supplied type of loss format is invalid
+                value:
+                  code: FORMAT_TYPE_OF_BUSINESS
+  formatSelfEmploymentId:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              formatSelfEmploymentId:
+                description: The supplied self employment ID format is invalid
+                value:
+                  code: FORMAT_SELF_EMPLOYMENT_ID
+  ruleSelfEmploymentId:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              ruleSelfEmploymentId:
+                description: A self-employment ID should be supplied for a self-employment business type
+                value:
+                  code: RULE_SELF_EMPLOYMENT_ID
+  ruleEndDateBeforeStartDate:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              ruleEndDateBeforeStartDate:
+                description: The supplied end date must not be before the supplied start date
+                value:
+                  code: RULE_END_DATE_BEFORE_START_DATE
+  ruleAccountingPeriodNotSupported:
+    responses:
+      400:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              ruleAccountingPeriodNotSupported:
+                description: The accounting period predates the earliest allowable tax year
+                value:
+                  code: RULE_ACCOUNTING_PERIOD_NOT_SUPPORTED                                   
+
+
+#403 Errors
+  clientOrAgentNotAuthorised:
+    responses:
+      403:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              clientOrAgentNotAuthorised:
+                description: 'The client and/or agent is not authorised. This is normally because: the client is not subscribed to MTD, the agent is not subscribed to Agent Services, or the client has not authorised the agent to act on their behalf.'
+                value:
+                  code: CLIENT_OR_AGENT_NOT_AUTHORISED
+  ruleNoPeriodicData:
+    responses:
+      403:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              ruleNoPeriodicData:
+                description: Periodic update missing for this period
+                value:
+                  code: RULE_PERIODIC_DATA_INCOMPLETE
+  ruleAccountingPeriodNotEnded:
+    responses:
+      403:
+        body:
+          application/json:
+            type: types.errorResponse
+            examples:
+              ruleNoAccountingPeriod:
+                description: The relevant accounting period has not yet ended
+                value:
+                  code: RULE_ACCOUNTING_PERIOD_NOT_ENDED
+
+#404 Errors 
+  notFound:
+    responses:
+      404:
+        body:
+          application/json:
+            type: types.errorResponse
+            example:
+              description: The matching resource is not found.
+              value:
+                code: MATCHING_RESOURCE_NOT_FOUND
+  notFoundIncomeSource:
+    responses:
+      404:
+        body:
+          application/json:
+            type: types.errorResponse
+            example:
+              description: The remote endpoint has indicated that the given income source could not be found
+              value:
+                code: MATCHING_RESOURCE_NOT_FOUND
+  notFoundNino:
+    responses:
+      404:
+        body:
+          application/json:
+            type: types.errorResponse
+            example:
+              description: The remote endpoint has indicated that no data can be found for the given NINO
+              value:
+                code: MATCHING_RESOURCE_NOT_FOUND                                    

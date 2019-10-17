@@ -1,0 +1,55 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "accountingPeriod",
+      "typeOfBusiness"
+    ],
+    "properties": {
+      "accountingPeriod": {
+        "$id": "#/properties/accountingPeriod",
+        "type": "object",
+        "title": "The Accountingperiod Schema",
+        "required": [
+          "startDate",
+          "endDate"
+        ],
+        "properties": {
+          "startDate": {
+            "$id": "#/properties/accountingPeriod/properties/startDate",
+            "type": "string",
+            "title": "The Startdate Schema",
+            "default": "",
+            "examples": [
+              "2018-04-06"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "endDate": {
+            "$id": "#/properties/accountingPeriod/properties/endDate",
+            "type": "string",
+            "title": "The Enddate Schema",
+            "default": "",
+            "examples": [
+              "2019-04-05"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      },
+      "typeOfBusiness": {
+        "$id": "#/properties/typeOfBusiness",
+        "type": "string",
+        "title": "The Typeofbusiness Schema",
+        "default": "",
+        "examples": [
+          "self-employment"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "selfEmploymentId": { "$ref": "definitions.json#/definitions/selfEmploymentId" }
+    }
+  }
+  

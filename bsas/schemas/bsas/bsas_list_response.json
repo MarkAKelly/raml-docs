@@ -1,0 +1,55 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The BSAS list Schema",
+    "required": [
+      "businessSourceSummaries"
+    ],
+    "properties": {
+      "businessSourceSummaries": {
+        "$id": "#/properties/businessSourceSummaries",
+        "type": "array",
+        "title": "The Businesssourcesummaries Schema",
+        "items": {
+          "$id": "#/properties/businessSourceSummaries/items",
+          "type": "object",
+          "title": "The Items Schema",
+          "required": [
+            "typeOfBusiness", "accountingPeriod"
+          ],
+          "properties": {
+            "typeOfBusiness": { "$ref": "definitions.json#/definitions/typeOfBusiness" },
+            "accountingPeriod": { "$ref": "definitions.json#/definitions/accountingPeriod" },
+            "selfEmploymentId": { "$ref": "definitions.json#/definitions/selfEmploymentId" },
+            "bsasEntries": {
+              "type": "array",
+              "required": ["bsasId", "requestedDateTime", "summaryStatus", "adjustedSummary"],
+              "properties": {
+                "bsasId": { "$ref": "definitions.json#/definitions/bsasId"},
+                "requestedDateTime": {
+                  "type": "string",
+                  "title": "The Requesteddatetime Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-07-07T01:00:00.123Z"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "summaryStatus": {
+                  "type": "string",
+                  "enum": ["valid", "invalid", "superseded"],
+                  "examples": ["valid", "invalid"]
+                },
+                "adjustedSummary": {
+                  "type": "boolean",
+                  "example": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

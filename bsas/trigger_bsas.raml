@@ -1,0 +1,44 @@
+is:
+  - headers.acceptJson
+  - headers.contentTypeJson
+  - headers.testScenarioHeader
+  - errors.formatNino
+  - errors.formatStartDate
+  - errors.formatEndDate
+  - errors.formatTypeOfBusiness
+  - errors.formatSelfEmploymentId
+  - errors.incorrectOrEmptyBody
+  - errors.ruleSelfEmploymentId
+  - errors.ruleEndDateBeforeStartDate
+  - errors.ruleAccountingPeriodNotSupported
+  - errors.ruleAccountingPeriodNotEnded
+  - errors.ruleNoPeriodicData
+
+
+displayName: Trigger a Business Source Accounting Summary [test only]
+description: This endpoint allows users to Trigger a Business Source Accounting Summary.
+# (annotations.sandboxData): !include scenarios/broughtForwardLosses_create.md
+(annotations.scope): "write:self-assessment"
+securedBy: [ sec.oauth_2_0: { scopes: [ "write:self-assessment" ] } ]
+body:
+  application/json:
+    description: The information about the business source  
+    type: !include schemas/bsas/trigger_bsas_request.json
+    examples:
+      example-1:
+        description: Self-employment BSAS request
+        value: !include examples/bsas/trigger_bsas_request.json
+responses:
+  201:
+    headers:
+      X-CorrelationId:
+        example: c75f40a6-a3df-4429-a697-471eeec46435
+        description: Unique ID for operation tracking <br> String, 36 characters.
+    body:
+      application/json:
+        type: !include schemas/bsas/id_response.json
+        examples:
+          example-1:
+            description: BSAS ID
+            value: !include examples/bsas/id.json
+        

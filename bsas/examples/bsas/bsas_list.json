@@ -1,0 +1,42 @@
+{
+    "businessSourceSummaries": [
+      {
+        "typeOfBusiness": "self-employment",
+        "selfEmploymentId": "XAIS12345678901",
+        "accountingPeriod": {
+          "startDate": "2018-04-06",
+          "endDate": "2019-04-05"
+        },
+        "bsasEntries": [
+          {
+            "bsasId": "12345678-1234-123-123-123456789012",
+            "requestedDateTime": "2019-07-07T01:00:00.123Z",
+            "summaryStatus": "valid",
+            "adjustedSummary": false
+          },
+          {
+            "bsasId": "12345678-1234-123-123-123456789013",
+            "requestedDateTime": "2019-07-0401:00:00.123Z",
+            "summaryStatus": "superseded",
+            "adjustedSummary": false
+          }
+        ]
+      },
+      {
+        "id": "12345678-1234-123-123-123456789013",
+        "typeOfBusiness": "uk-property-fhl",
+        "accountingPeriod": {
+          "startDate": "2018-04-06",
+          "endDate": "2019-04-05"
+        },
+        "bsasEntries": [
+          {
+            "bsasId": "12345678-1234-123-123-123456789014",
+            "requestedDateTime": "2019-07-07T01:00:00.123Z",
+            "summaryStatus": "valid",
+            "adjustedSummary": false
+          }          
+        ]
+      }
+    ]
+}

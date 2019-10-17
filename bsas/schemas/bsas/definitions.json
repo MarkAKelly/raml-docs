@@ -1,0 +1,167 @@
+{
+    "definitions": {
+
+        "selfEmploymentId": {
+          "$id": "#/selfEmploymentId",
+          "type": "string",
+          "title": "The Selfemploymentid Schema",
+          "examples": [
+            "XAIS12345678912"
+          ],
+          "pattern": "^(.*)$"
+        },
+    
+        "bsasId": {
+          "$id": "#/bsasId",
+          "type": "string",
+          "title": "The Id Schema",
+          "examples": [
+            "12345678-1234-123-123-123456789012"
+          ],
+          "pattern": "^(.*)$"
+        },
+    
+        "typeOfBusiness": {
+          "$id": "#/typeOfBusiness",
+          "type": "string",
+          "title": "The Typeofbusiness Schema",
+          "enum": ["self-employment", "uk-property-fhl", "uk-property-non-fhl"],
+          "examples": [
+            "self-employment"
+          ],
+          "pattern": "^(.*)$"
+        },
+    
+        "total": {
+          "$id": "#/total",
+          "type": "object",
+          "title": "The Total Schema",
+          "required": [
+            "totalIncome",
+            "totalExpenses"
+          ],
+          "properties": {
+            "totalIncome": {
+              "type": "number",
+              "title": "The Totalincome Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "totalExpenses": {
+              "type": "number",
+              "title": "The Totalexpenses Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "totalAdditions": {
+              "type": "number",
+              "title": "The Totaladditions Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "totalDeductions": {
+              "type": "number",
+              "title": "The Totaldeductions Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        },
+    
+        "profit": {
+          "$id": "#/profit",
+          "type": "object",
+          "title": "The Profit Schema",
+          "required": [
+            "netProfit",
+            "taxableProfit"
+          ],
+          "properties": {
+            "netProfit": {
+              "type": "number",
+              "title": "The Netprofit Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "taxableProfit": {
+              "type": "number",
+              "title": "The Taxableprofit Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        },
+    
+        "loss": {
+          "$id": "#/loss",
+          "type": "object",
+          "title": "The Loss Schema",
+          "required": [
+            "netLoss",
+            "taxableLoss"
+          ],
+          "properties": {
+            "netLoss": {
+              "type": "number",
+              "title": "The Netloss Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "taxableLoss": {
+              "type": "number",
+              "title": "The Taxableloss Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        },
+        
+        "accountingPeriod": {
+          "$id": "#/accountingPeriod",
+          "type": "object",
+          "title": "The Accountingperiod Schema",
+          "required": [
+            "startDate",
+            "endDate"
+          ],
+          "properties": {
+            "startDate": {
+              "$id": "#/accountingPeriod/properties/startDate",
+              "type": "string",
+              "title": "The Startdate Schema",
+              "default": "",
+              "examples": [
+                "2018-04-06"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "endDate": {
+              "$id": "#/accountingPeriod/properties/endDate",
+              "type": "string",
+              "title": "The Enddate Schema",
+              "default": "",
+              "examples": [
+                "2019-4-05"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        }
+      }
+}

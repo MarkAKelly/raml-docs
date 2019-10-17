@@ -1,0 +1,1 @@
+You can find the changelog in the [individuals-accounting-api](http://www.google.come) GitHub wiki.

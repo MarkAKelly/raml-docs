@@ -1,0 +1,48 @@
+{
+    "metadata": {
+        "typeOfBusiness": "self-employment",
+        "selfEmploymentId": "XAIS12345678912",
+        "accountingPeriod" : {
+            "startDate": "2018-04-06",
+            "endDate": "2019-4-05"
+        },
+        "taxYear": "2018-19",
+        "requestedDateTime": "2019-07-07T01:00:00.123Z",
+        "bsasId": "12345678-1234-123-123-123456789012",
+        "summaryStatus": "valid",
+        "adjustedSummary": false
+    },
+    "furnishedHolidayLet": {
+        "total" : {
+            "totalIncome": 123.45,
+            "totalExpenses": 123.45,
+            "totalAdditions": 123.45,
+            "totalDeductions": 123.45
+        },
+        "profit": {
+            "netProfit": 123.45,
+            "taxableProfit": 123.45
+        },
+        "loss": {
+            "netLoss": 123.45,
+            "taxableLoss": 123.45
+        },
+        "totalIncomeBreakdown": {
+            "rentIncome": {
+                "amount": 123.45
+            },
+            "rarRentReceived": 123.45
+        },
+        "totalExpensesBreakdown": {
+            "premisesRunningCosts": 123.45,
+            "repairsAndMaintenance": 123.45,
+            "financialCosts": 123.45,
+            "professionalFees": 123.45,
+            "travelCosts": 123.45,
+            "costOfServices": 123.45,
+            "other": 123.45,
+            "rarReliefClaimed": 123.45,
+            "consolidatedExpenses": 123.45
+        }
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "metadata": {
+        "typeOfBusiness": "self-employment",
+        "selfEmploymentId": "XAIS12345678912",
+        "accountingPeriod" : {
+            "startDate": "2018-04-06",
+            "endDate": "2019-4-05"
+        },
+        "taxYear": "2018-19",
+        "requestedDateTime": "2019-07-07T01:00:00.123Z",
+        "bsasId": "12345678-1234-123-123-123456789012",
+        "summaryStatus": "valid",
+        "adjustedSummary": false
+    },
+    "selfEmployment" : {
+        "total" : {
+            "totalIncome": 123.45,
+            "totalExpenses": 123.45,
+            "totalAdditions": 123.45,
+            "totalDeductions": 123.45
+        },
+        "profit": {
+            "netProfit": 123.45,
+            "taxableProfit": 123.45
+        },
+        "loss": {
+            "netLoss": 123.45,
+            "taxableLoss": 123.45
+        },
+        "totalIncomeBreakdown": {
+            "turnover": 123.45,
+            "other": 123.45
+        },
+        "totalExpensesBreakdown": {
+            "costOfGoodsBought": {
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "cisPaymentsToSubContractors": {
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "staffCosts": {
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "travelCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "premisesRunningCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "maintenanceCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "adminCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "advertisingCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "businessEntertainmentCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "interest":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "financialCharges":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "badDebt":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "professionalFees":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "depreciation":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "other":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "consolidatedExpenses":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            } 
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "definitions": {
+  },
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "bsasId": { "$ref": "definitions.json#/definitions/bsasId" }
+  }
+}

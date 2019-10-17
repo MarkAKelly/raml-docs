@@ -1,0 +1,54 @@
+#%RAML 1.0
+
+uses:
+  sec: https://developer.service.hmrc.gov.uk/api-documentation/assets/common/modules/securitySchemes.raml
+  annotations: https://developer.service.hmrc.gov.uk/api-documentation/assets/common/modules/annotations.raml
+  types: https://developer.service.hmrc.gov.uk/api-documentation/assets/common/modules/types.raml
+  errors: errors.raml
+  headers: headers.raml
+  queryParameters: queryParameters.raml
+
+title: Business Source Accounting Summary (MTD)
+description: This is a draft spec for the BSAS (MTD) API.
+version: 1.0
+protocols: [ HTTPS ]
+baseUri: https://api.service.hmrc.gov.uk/
+mediaType: application/json
+
+# documentation:
+#   - title: Overview
+#     content: !include docs/overview.md
+#   - title: Changelog
+#     content: !include docs/changelog.md
+#   - title: Support
+#     content: !include docs/support.md
+#   - title: Testing
+#     content: !include docs/testing.md
+#   - title: Versioning
+#     content: !include https://developer.service.hmrc.gov.uk/api-documentation/assets/common/docs/versioning.md
+#   - title: Errors
+#     content: !include https://developer.service.hmrc.gov.uk/api-documentation/assets/common/docs/errors.md
+
+'/individuals/accounting':
+  /{nino}:
+    uriParameters:
+      nino:
+        description: National Insurance number, in the format AA999999A.
+        type: string
+        example: TC663795B
+    (annotations.group):
+      name: Business Source Accounting Summary
+      description: BSAS and ting
+    /business-summary/:
+      post: !include trigger_bsas.raml
+      get: !include bsas_list.raml
+      # /{lossId}:
+      #   uriParameters:
+      #     lossId:
+      #       description: A unique identifier for the brought forward loss. <br><br>Must conform to the regular expression `^[A-Za-z0-9]{15}$`
+      #       type: string
+      #       example: "1234568790ABCDE"
+      #   get: !include broughtForwardLosses_get.raml
+      #   delete: !include broughtForwardLosses_delete.raml
+      #   /change-loss-amount:
+      #     post: !include broughtForwardLosses_amend.raml
