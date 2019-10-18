@@ -39,16 +39,16 @@ mediaType: application/json
     (annotations.group):
       name: Business Source Accounting Summary
       description: BSAS and ting
-    /business-summary/:
+    /business-summary:
       post: !include trigger_bsas.raml
       get: !include bsas_list.raml
-      # /{lossId}:
-      #   uriParameters:
-      #     lossId:
-      #       description: A unique identifier for the brought forward loss. <br><br>Must conform to the regular expression `^[A-Za-z0-9]{15}$`
-      #       type: string
-      #       example: "1234568790ABCDE"
-      #   get: !include broughtForwardLosses_get.raml
+      /{bsasId}:
+        uriParameters:
+          bsasId:
+            description: A unique identifier for the summary calculation. <br><br>Must conform to the regular expression `^[0-9]{8}|[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$              `
+            type: string
+            example: "f2fb30e5-4ab6-4a29-b3c1-c7264259ff1c"
+        get: !include retrieve_bsas.raml
       #   delete: !include broughtForwardLosses_delete.raml
       #   /change-loss-amount:
       #     post: !include broughtForwardLosses_amend.raml

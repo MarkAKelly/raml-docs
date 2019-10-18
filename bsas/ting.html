@@ -170,7 +170,7 @@ pre code {
 .required {
   color: #f00;
 }
-    </style></head><body data-spy="scroll" data-target="#sidebar"><div class="container"><div class="row"><div class="col-md-9" role="main"><div class="page-header"><h1>Business Source Accounting Summary (MTD) API documentation <small>version 1.0</small></h1><p>https://api.service.hmrc.gov.uk/</p><p>This is a draft spec for the BSAS (MTD) API.</p></div><div class="panel panel-default"><div class="panel-heading"><h3 id="individuals_accounting" class="panel-title">/individuals/accounting</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_individuals_accounting__nino__business_summary_"><span class="parent">/individuals/accounting/{nino}</span>/business-summary/</a> <span class="methods"><a href="#individuals_accounting__nino__business_summary__post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a> <a href="#individuals_accounting__nino__business_summary__get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_individuals_accounting__nino__business_summary_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#individuals_accounting__nino__business_summary__post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#individuals_accounting__nino__business_summary__get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="individuals_accounting__nino__business_summary__post"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/individuals/accounting/{nino}</span>/business-summary/</h4></div><div class="modal-body"><div class="alert alert-info"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b></b> with scopes:<ul><li>write:self-assessment</li></ul></div><ul class="nav nav-tabs"><li class="active"><a href="#individuals_accounting__nino__business_summary__post_request" data-toggle="tab">Request</a></li><li><a href="#individuals_accounting__nino__business_summary__post_response" data-toggle="tab">Response</a></li><li><a href="#individuals_accounting__nino__business_summary__post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="individuals_accounting__nino__business_summary__post_request"><h3>URI Parameters</h3><ul><li><strong>nino</strong>: <em><span class="required">required</span>(string)</em><p>National Insurance number, in the format AA999999A.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>TC663795B</code></pre></div></li></ul><h3>Annotations</h3><ul><li><strong>annotations.scope</strong><pre><code>"write:self-assessment"</code></pre></li></ul><h3>Headers</h3><ul><li><strong>Accept</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the response format and the version of the API to be used.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/vnd.hmrc.1.0+json</code></pre></div></li><li><strong>Content-Type</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the format of the request body, which must be JSON.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/json</code></pre></div></li><li><strong>Gov-Test-Scenario</strong>: <em>(string)</em><p>Only in sandbox environment. See Test Data table for all header values.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>-</code></pre></div></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+    </style></head><body data-spy="scroll" data-target="#sidebar"><div class="container"><div class="row"><div class="col-md-9" role="main"><div class="page-header"><h1>Business Source Accounting Summary (MTD) API documentation <small>version 1.0</small></h1><p>https://api.service.hmrc.gov.uk/</p><p>This is a draft spec for the BSAS (MTD) API.</p></div><div class="panel panel-default"><div class="panel-heading"><h3 id="individuals_accounting" class="panel-title">/individuals/accounting</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_individuals_accounting__nino__business_summary"><span class="parent">/individuals/accounting/{nino}</span>/business-summary</a> <span class="methods"><a href="#individuals_accounting__nino__business_summary_post"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a> <a href="#individuals_accounting__nino__business_summary_get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_individuals_accounting__nino__business_summary" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#individuals_accounting__nino__business_summary_post'" class="list-group-item"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#individuals_accounting__nino__business_summary_get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="individuals_accounting__nino__business_summary_post"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/individuals/accounting/{nino}</span>/business-summary</h4></div><div class="modal-body"><div class="alert alert-info"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b></b> with scopes:<ul><li>write:self-assessment</li></ul></div><ul class="nav nav-tabs"><li class="active"><a href="#individuals_accounting__nino__business_summary_post_request" data-toggle="tab">Request</a></li><li><a href="#individuals_accounting__nino__business_summary_post_response" data-toggle="tab">Response</a></li><li><a href="#individuals_accounting__nino__business_summary_post_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="individuals_accounting__nino__business_summary_post_request"><h3>URI Parameters</h3><ul><li><strong>nino</strong>: <em><span class="required">required</span>(string)</em><p>National Insurance number, in the format AA999999A.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>TC663795B</code></pre></div></li></ul><h3>Annotations</h3><ul><li><strong>annotations.scope</strong><pre><code>"write:self-assessment"</code></pre></li></ul><h3>Headers</h3><ul><li><strong>Accept</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the response format and the version of the API to be used.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/vnd.hmrc.1.0+json</code></pre></div></li><li><strong>Content-Type</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the format of the request body, which must be JSON.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/json</code></pre></div></li><li><strong>Gov-Test-Scenario</strong>: <em>(string)</em><p>Only in sandbox environment. See Test Data table for all header values.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>-</code></pre></div></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
     "definitions": {},
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
@@ -231,7 +231,7 @@ pre code {
     },
     "typeOfBusiness": "self-employment",
     "selfEmploymentId": "XAIS12345678912"
-}</code></pre></div></div><div class="tab-pane" id="individuals_accounting__nino__business_summary__post_response"><h2>HTTP status code <a href="http://httpstatus.es/201" target="_blank">201</a></h2><h3>Headers</h3><ul><li><strong>X-CorrelationId</strong>: <em><span class="required">required</span>(string)</em><p>Unique ID for operation tracking<br>String, 36 characters.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>c75f40a6-a3df-4429-a697-471eeec46435</code></pre></div></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}</code></pre></div></div><div class="tab-pane" id="individuals_accounting__nino__business_summary_post_response"><h2>HTTP status code <a href="http://httpstatus.es/201" target="_blank">201</a></h2><h3>Headers</h3><ul><li><strong>X-CorrelationId</strong>: <em><span class="required">required</span>(string)</em><p>Unique ID for operation tracking<br>String, 36 characters.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>c75f40a6-a3df-4429-a697-471eeec46435</code></pre></div></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
   "definitions": {
   },
   "$schema": "http://json-schema.org/draft-04/schema#",
@@ -268,7 +268,7 @@ pre code {
   "code": "RULE_ACCOUNTING_PERIOD_NOT_ENDED"
 }</code></pre><p><strong>ruleNoPeriodicData</strong>:<br>Periodic update missing for this period</p><pre><code>{
   "code": "RULE_PERIODIC_DATA_INCOMPLETE"
-}</code></pre></div></div><div class="tab-pane" id="individuals_accounting__nino__business_summary__post_securedby"><h1>Secured by</h1></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="individuals_accounting__nino__business_summary__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/individuals/accounting/{nino}</span>/business-summary/</h4></div><div class="modal-body"><div class="alert alert-info"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b></b> with scopes:<ul><li>write:self-assessment</li></ul></div><ul class="nav nav-tabs"><li class="active"><a href="#individuals_accounting__nino__business_summary__get_request" data-toggle="tab">Request</a></li><li><a href="#individuals_accounting__nino__business_summary__get_response" data-toggle="tab">Response</a></li><li><a href="#individuals_accounting__nino__business_summary__get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="individuals_accounting__nino__business_summary__get_request"><h3>URI Parameters</h3><ul><li><strong>nino</strong>: <em><span class="required">required</span>(string)</em><p>National Insurance number, in the format AA999999A.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>TC663795B</code></pre></div></li></ul><h3>Annotations</h3><ul><li><strong>annotations.scope</strong><pre><code>"write:self-assessment"</code></pre></li></ul><h3>Headers</h3><ul><li><strong>Accept</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the response format and the version of the API to be used.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/vnd.hmrc.1.0+json</code></pre></div></li><li><strong>Content-Type</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the format of the request body, which must be JSON.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/json</code></pre></div></li><li><strong>Gov-Test-Scenario</strong>: <em>(string)</em><p>Only in sandbox environment. See Test Data table for all header values.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>-</code></pre></div></li></ul><h3>Query Parameters</h3><ul><li><strong>taxYear</strong>: <em>(string)</em><p>The tax year the data applies to, for example, 2019-20. The start year and end year must not span two tax years. No gaps are allowed, for example, 2019-21 is not valid. The minimum tax year is 2019-20.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>2019-20</code></pre></div></li><li><strong>typeOfBusiness</strong>: <em>(string)</em><p>The type of business the summary calculation is for. Limited to the following possible values: <b><ul><li><code>self-employment</code></li><li><code>uk-property-fhl</code></li><li><code>uk-property-non-fhl</code></li></ul></b></p><p><strong>Example</strong>:</p><div class="examples"><pre><code>self-employment</code></pre></div></li><li><strong>selfEmploymentId</strong>: <em><span class="required">required</span>(string)</em><p>An identifier for the self-employment business, unique to the customer. <b>Must conform to the regular expression<ul><li><code>^X[A-Z0-9]{1}IS[0-9]{11}$</code></li></ul></b></p></li></ul></div><div class="tab-pane" id="individuals_accounting__nino__business_summary__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Headers</h3><ul><li><strong>X-CorrelationId</strong>: <em><span class="required">required</span>(string)</em><p>Unique ID for operation tracking<br>String, 36 characters.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>c75f40a6-a3df-4429-a697-471eeec46435</code></pre></div></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+}</code></pre></div></div><div class="tab-pane" id="individuals_accounting__nino__business_summary_post_securedby"><h1>Secured by</h1></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="individuals_accounting__nino__business_summary_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/individuals/accounting/{nino}</span>/business-summary</h4></div><div class="modal-body"><div class="alert alert-info"><p>This endpoint allows users to Trigger a Business Source Accounting Summary.</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b></b> with scopes:<ul><li>write:self-assessment</li></ul></div><ul class="nav nav-tabs"><li class="active"><a href="#individuals_accounting__nino__business_summary_get_request" data-toggle="tab">Request</a></li><li><a href="#individuals_accounting__nino__business_summary_get_response" data-toggle="tab">Response</a></li><li><a href="#individuals_accounting__nino__business_summary_get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="individuals_accounting__nino__business_summary_get_request"><h3>URI Parameters</h3><ul><li><strong>nino</strong>: <em><span class="required">required</span>(string)</em><p>National Insurance number, in the format AA999999A.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>TC663795B</code></pre></div></li></ul><h3>Annotations</h3><ul><li><strong>annotations.scope</strong><pre><code>"write:self-assessment"</code></pre></li></ul><h3>Headers</h3><ul><li><strong>Accept</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the response format and the version of the API to be used.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/vnd.hmrc.1.0+json</code></pre></div></li><li><strong>Content-Type</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the format of the request body, which must be JSON.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/json</code></pre></div></li><li><strong>Gov-Test-Scenario</strong>: <em>(string)</em><p>Only in sandbox environment. See Test Data table for all header values.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>-</code></pre></div></li></ul><h3>Query Parameters</h3><ul><li><strong>taxYear</strong>: <em><span class="required">required</span>(string)</em><p>The tax year the data applies to, for example, 2019-20. The start year and end year must not span two tax years. No gaps are allowed, for example, 2019-21 is not valid. The minimum tax year is 2019-20.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>2019-20</code></pre></div></li><li><strong>typeOfBusiness</strong>: <em>(string)</em><p>The type of business the summary calculation is for. Limited to the following possible values: <b><ul><li><code>self-employment</code></li><li><code>uk-property-fhl</code></li><li><code>uk-property-non-fhl</code></li></ul></b></p><p><strong>Example</strong>:</p><div class="examples"><pre><code>self-employment</code></pre></div></li><li><strong>selfEmploymentId</strong>: <em>(string)</em><p>An identifier for the self-employment business, unique to the customer. <b>Must conform to the regular expression<ul><li><code>^X[A-Z0-9]{1}IS[0-9]{11}$</code></li></ul></b></p><p><strong>Example</strong>:</p><div class="examples"><pre><code>XAIS12345678901</code></pre></div></li></ul></div><div class="tab-pane" id="individuals_accounting__nino__business_summary_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Headers</h3><ul><li><strong>X-CorrelationId</strong>: <em><span class="required">required</span>(string)</em><p>Unique ID for operation tracking<br>String, 36 characters.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>c75f40a6-a3df-4429-a697-471eeec46435</code></pre></div></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
     "definitions": {},
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "http://example.com/root.json",
@@ -379,4 +379,1096 @@ pre code {
   "code": "RULE_ACCOUNTING_PERIOD_NOT_ENDED"
 }</code></pre><p><strong>ruleNoPeriodicData</strong>:<br>Periodic update missing for this period</p><pre><code>{
   "code": "RULE_PERIODIC_DATA_INCOMPLETE"
-}</code></pre></div></div><div class="tab-pane" id="individuals_accounting__nino__business_summary__get_securedby"><h1>Secured by</h1></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#individuals_accounting">/individuals/accounting</a></li></ul></div></div></div></div></body></html>
+}</code></pre></div></div><div class="tab-pane" id="individuals_accounting__nino__business_summary_get_securedby"><h1>Secured by</h1></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_individuals_accounting__nino__business_summary__bsasid_"><span class="parent">/individuals/accounting/{nino}/business-summary</span>/{bsasId}</a> <span class="methods"><a href="#individuals_accounting__nino__business_summary__bsasid__get"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span></a></span></h4></div><div id="panel_individuals_accounting__nino__business_summary__bsasid_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#individuals_accounting__nino__business_summary__bsasid__get'" class="list-group-item"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span><div class="method_description"><p>This endpoint allows users to retreive a Business Source Accounting Summary.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="individuals_accounting__nino__business_summary__bsasid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get <span class="glyphicon glyphicon-lock" title="Authentication required"></span></span> <span class="parent">/individuals/accounting/{nino}/business-summary</span>/{bsasId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>This endpoint allows users to retreive a Business Source Accounting Summary.</p></div><div class="alert alert-warning"><span class="glyphicon glyphicon-lock" title="Authentication required"></span> Secured by <b></b> with scopes:<ul><li>write:self-assessment</li></ul></div><ul class="nav nav-tabs"><li class="active"><a href="#individuals_accounting__nino__business_summary__bsasid__get_request" data-toggle="tab">Request</a></li><li><a href="#individuals_accounting__nino__business_summary__bsasid__get_response" data-toggle="tab">Response</a></li><li><a href="#individuals_accounting__nino__business_summary__bsasid__get_securedby" data-toggle="tab">Security</a></li></ul><div class="tab-content"><div class="tab-pane active" id="individuals_accounting__nino__business_summary__bsasid__get_request"><h3>URI Parameters</h3><ul><li><strong>nino</strong>: <em><span class="required">required</span>(string)</em><p>National Insurance number, in the format AA999999A.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>TC663795B</code></pre></div></li><li><strong>bsasId</strong>: <em><span class="required">required</span>(string)</em><p>A unique identifier for the summary calculation.<br><br>Must conform to the regular expression <code>^[0-9]{8}|[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$</code></p><p><strong>Example</strong>:</p><div class="examples"><pre><code>f2fb30e5-4ab6-4a29-b3c1-c7264259ff1c</code></pre></div></li></ul><h3>Annotations</h3><ul><li><strong>annotations.scope</strong><pre><code>"write:self-assessment"</code></pre></li></ul><h3>Headers</h3><ul><li><strong>Accept</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the response format and the version of the API to be used.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/vnd.hmrc.1.0+json</code></pre></div></li><li><strong>Content-Type</strong>: <em><span class="required">required</span>(string)</em><p>Specifies the format of the request body, which must be JSON.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>application/json</code></pre></div></li><li><strong>Gov-Test-Scenario</strong>: <em>(string)</em><p>Only in sandbox environment. See Test Data table for all header values.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>-</code></pre></div></li></ul><h3>Query Parameters</h3><ul><li><strong>adjustedStatus</strong>: <em>(boolean)</em><p>To specify which of the original - unadjusted - summary or the adjusted summary is to be returned. If not specified the adjusted summary will be returned, where it exists. The original summary is returned, otherwise.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>true</code></pre></div></li></ul></div><div class="tab-pane" id="individuals_accounting__nino__business_summary__bsasid__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Headers</h3><ul><li><strong>X-CorrelationId</strong>: <em><span class="required">required</span>(string)</em><p>Unique ID for operation tracking<br>String, 36 characters.</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>c75f40a6-a3df-4429-a697-471eeec46435</code></pre></div></li></ul><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "metadata"
+  ],
+  "properties": {
+    "metadata": {
+      "$id": "#/properties/metadata",
+      "type": "object",
+      "title": "The Metadata Schema",
+      "required": [
+        "typeOfBusiness",
+        "accountingPeriod",
+        "requestedDateTime",
+        "bsasId",
+        "summaryStatus",
+        "adjustedSummary"
+      ],
+      "properties": {
+        "typeOfBusiness": { "$ref": "definitions.json#/definitions/typeOfBusiness"},
+        "selfEmploymentId": { "$ref": "definitions.json#/definitions/selfEmploymentId"},
+        "accountingPeriod": {"$ref": "definitions.json#/definitions/accountingPeriod" },
+        "taxYear": {
+          "$id": "#/properties/metadata/properties/taxYear",
+          "type": "string",
+          "title": "The Taxyear Schema",
+          "default": "",
+          "examples": [
+            "2018-19"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "requestedDateTime": {
+          "$id": "#/properties/metadata/properties/requestedDateTime",
+          "type": "string",
+          "title": "The Requesteddatetime Schema",
+          "default": "",
+          "examples": [
+            "2019-07-07T01:00:00.123Z"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "bsasId": { "$ref": "#/definitions/bsasId"},
+        "summaryStatus": {
+          "$id": "#/properties/metadata/properties/summaryStatus",
+          "type": "string",
+          "title": "The Summarystatus Schema",
+          "default": "",
+          "examples": [
+            "valid"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "adjustedSummary": {
+          "$id": "#/properties/metadata/properties/adjustedSummary",
+          "type": "boolean",
+          "title": "The Adjustedsummary Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      }
+    },
+    "selfEmployment": {
+      "$id": "#/properties/selfEmployment",
+      "type": "object",
+      "title": "The Selfemployment Schema",
+      "default": null,
+      "required": [
+        "total",
+        "profit",
+        "loss"
+      ],
+      "properties": {
+        "total": { "$ref": "definitions.json#/definitions/total" },
+        "profit": { "$ref": "definitions.json#/definitions/profit" },
+        "loss": { "$ref": "definitions.json#/definitions/loss" },
+        "totalIncomeBreakdown": {
+          "$id": "#/properties/selfEmployment/properties/totalIncomeBreakdown",
+          "type": "object",
+          "title": "The Totalincomebreakdown Schema",
+          "default": null,
+          "required": [
+            "turnover"
+          ],
+          "properties": {
+            "turnover": {
+              "$id": "#/properties/selfEmployment/properties/totalIncomeBreakdown/properties/turnover",
+              "type": "number",
+              "title": "The Turnover Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "other": {
+              "$id": "#/properties/selfEmployment/properties/totalIncomeBreakdown/properties/other",
+              "type": "number",
+              "title": "The Other Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        },
+        "totalExpensesBreakdown": {
+          "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown",
+          "type": "object",
+          "title": "The Totalexpensesbreakdown Schema",
+          "default": null,
+          "properties": {
+            "costOfGoodsBought": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/costOfGoodsBought",
+              "type": "object",
+              "title": "The Costofgoodsbought Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/costOfGoodsBought/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/costOfGoodsBought/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "cisPaymentsToSubContractors": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/cisPaymentsToSubContractors",
+              "type": "object",
+              "title": "The Cispaymentstosubcontractors Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/cisPaymentsToSubContractors/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/cisPaymentsToSubContractors/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "staffCosts": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/staffCosts",
+              "type": "object",
+              "title": "The Staffcosts Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/staffCosts/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/staffCosts/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "travelCosts": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/travelCosts",
+              "type": "object",
+              "title": "The Travelcosts Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/travelCosts/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/travelCosts/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "premisesRunningCosts": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/premisesRunningCosts",
+              "type": "object",
+              "title": "The Premisesrunningcosts Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/premisesRunningCosts/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/premisesRunningCosts/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "maintenanceCosts": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/maintenanceCosts",
+              "type": "object",
+              "title": "The Maintenancecosts Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/maintenanceCosts/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/maintenanceCosts/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "adminCosts": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/adminCosts",
+              "type": "object",
+              "title": "The Admincosts Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/adminCosts/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/adminCosts/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "advertisingCosts": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/advertisingCosts",
+              "type": "object",
+              "title": "The Advertisingcosts Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/advertisingCosts/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/advertisingCosts/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "businessEntertainmentCosts": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/businessEntertainmentCosts",
+              "type": "object",
+              "title": "The Businessentertainmentcosts Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/businessEntertainmentCosts/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/businessEntertainmentCosts/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "interest": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/interest",
+              "type": "object",
+              "title": "The Interest Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/interest/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/interest/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "financialCharges": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/financialCharges",
+              "type": "object",
+              "title": "The Financialcharges Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/financialCharges/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/financialCharges/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "badDebt": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/badDebt",
+              "type": "object",
+              "title": "The Baddebt Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/badDebt/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/badDebt/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "professionalFees": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/professionalFees",
+              "type": "object",
+              "title": "The Professionalfees Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/professionalFees/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/professionalFees/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "depreciation": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/depreciation",
+              "type": "object",
+              "title": "The Depreciation Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/depreciation/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/depreciation/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "other": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/other",
+              "type": "object",
+              "title": "The Other Schema",
+              "default": null,
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/other/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                },
+                "disallowableAmount": {
+                  "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/other/properties/disallowableAmount",
+                  "type": "number",
+                  "title": "The Disallowableamount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "consolidatedExpenses": {
+              "$id": "#/properties/selfEmployment/properties/totalExpensesBreakdown/properties/consolidatedExpenses",
+              "type": "object",
+              "title": "The Consolidatedexpenses Schema",
+              "default": null
+            }
+          }
+        }
+      }
+    },
+    "nonFurnishedHolidayLettings": {
+      "$id": "#/properties/nonFurnishedHolidayLettings",
+      "type": "object",
+      "title": "The Nonfurnishedholidaylettings Schema",
+      "default": null,
+      "required": [
+        "total",
+        "profit",
+        "loss",
+        "totalIncomeBreakdown"
+      ],
+      "properties": {
+        "total": { "$ref": "definitions.json#/definitions/total" },
+        "profit": { "$ref": "definitions.json#/definitions/profit" },
+        "loss": { "$ref": "definitions.json#/definitions/loss" },
+        "totalIncomeBreakdown": {
+          "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalIncomeBreakdown",
+          "type": "object",
+          "title": "The Totalincomebreakdown Schema",
+          "required": [
+            "rentIncome"
+          ],
+          "properties": {
+            "rentIncome": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalIncomeBreakdown/properties/rentIncome",
+              "type": "object",
+              "title": "The Rentincome Schema",
+              "required": [
+                "amount"
+              ],
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalIncomeBreakdown/properties/rentIncome/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "premiumsOfLeaseGrant": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalIncomeBreakdown/properties/premiumsOfLeaseGrant",
+              "type": "number",
+              "title": "The Premiumsofleasegrant Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "reversePremiums": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalIncomeBreakdown/properties/reversePremiums",
+              "type": "number",
+              "title": "The Reversepremiums Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "otherPropertyIncome": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalIncomeBreakdown/properties/otherPropertyIncome",
+              "type": "number",
+              "title": "The Otherpropertyincome Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "rarRentReceived": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalIncomeBreakdown/properties/rarRentReceived",
+              "type": "number",
+              "title": "The Rarrentreceived Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        },
+        "totalExpensesBreakdown": {
+          "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown",
+          "type": "object",
+          "title": "The Totalexpensesbreakdown Schema",
+          "default": null,
+          "properties": {
+            "premisesRunningCosts": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/premisesRunningCosts",
+              "type": "number",
+              "title": "The Premisesrunningcosts Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "repairsAndMaintenance": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/repairsAndMaintenance",
+              "type": "number",
+              "title": "The Repairsandmaintenance Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "financialCosts": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/financialCosts",
+              "type": "number",
+              "title": "The Financialcosts Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "professionalFees": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/professionalFees",
+              "type": "number",
+              "title": "The Professionalfees Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "travelCosts": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/travelCosts",
+              "type": "number",
+              "title": "The Travelcosts Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "costOfServices": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/costOfServices",
+              "type": "number",
+              "title": "The Costofservices Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "residentialFinancialCost": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/residentialFinancialCost",
+              "type": "number",
+              "title": "The Residentialfinancialcost Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "other": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/other",
+              "type": "number",
+              "title": "The Other Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "rarReliefClaimed": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/rarReliefClaimed",
+              "type": "number",
+              "title": "The Rarreliefclaimed Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "consolidatedExpenses": {
+              "$id": "#/properties/nonFurnishedHolidayLettings/properties/totalExpensesBreakdown/properties/consolidatedExpenses",
+              "type": "number",
+              "title": "The Consolidatedexpenses Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        }
+      }
+    },
+    "furnishedHolidayLet": {
+      "$id": "#/properties/furnishedHolidayLet",
+      "type": "object",
+      "title": "The Furnishedholidaylet Schema",
+      "default": null,
+      "required": [
+        "total",
+        "profit",
+        "loss"
+      ],
+      "properties": {
+        "total": { "$ref": "definitions.json#/definitions/total" },
+        "profit": { "$ref": "definitions.json#/definitions/profit" },
+        "loss": { "$ref": "definitions.json#/definitions/loss" },
+        "totalIncomeBreakdown": {
+          "$id": "#/properties/furnishedHolidayLet/properties/totalIncomeBreakdown",
+          "type": "object",
+          "title": "The Totalincomebreakdown Schema",
+          "default": null,
+          "required": [
+            "rentIncome"
+          ],
+          "properties": {
+            "rentIncome": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalIncomeBreakdown/properties/rentIncome",
+              "type": "object",
+              "title": "The Rentincome Schema",
+              "properties": {
+                "amount": {
+                  "$id": "#/properties/furnishedHolidayLet/properties/totalIncomeBreakdown/properties/rentIncome/properties/amount",
+                  "type": "number",
+                  "title": "The Amount Schema",
+                  "default": 0,
+                  "examples": [
+                    123.45
+                  ]
+                }
+              }
+            },
+            "rarRentReceived": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalIncomeBreakdown/properties/rarRentReceived",
+              "type": "number",
+              "title": "The Rarrentreceived Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        },
+        "totalExpensesBreakdown": {
+          "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown",
+          "type": "object",
+          "title": "The Totalexpensesbreakdown Schema",
+          "default": null,
+          "properties": {
+            "premisesRunningCosts": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/premisesRunningCosts",
+              "type": "number",
+              "title": "The Premisesrunningcosts Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "repairsAndMaintenance": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/repairsAndMaintenance",
+              "type": "number",
+              "title": "The Repairsandmaintenance Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "financialCosts": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/financialCosts",
+              "type": "number",
+              "title": "The Financialcosts Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "professionalFees": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/professionalFees",
+              "type": "number",
+              "title": "The Professionalfees Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "travelCosts": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/travelCosts",
+              "type": "number",
+              "title": "The Travelcosts Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "costOfServices": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/costOfServices",
+              "type": "number",
+              "title": "The Costofservices Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "other": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/other",
+              "type": "number",
+              "title": "The Other Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "rarReliefClaimed": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/rarReliefClaimed",
+              "type": "number",
+              "title": "The Rarreliefclaimed Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            },
+            "consolidatedExpenses": {
+              "$id": "#/properties/furnishedHolidayLet/properties/totalExpensesBreakdown/properties/consolidatedExpenses",
+              "type": "number",
+              "title": "The Consolidatedexpenses Schema",
+              "default": 0,
+              "examples": [
+                123.45
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre><p><strong>Examples</strong>:</p><div class="examples"><p><strong>example-1</strong>:<br>Self Employment BSAS</p><pre><code>{
+    "metadata": {
+        "typeOfBusiness": "self-employment",
+        "selfEmploymentId": "XAIS12345678912",
+        "accountingPeriod" : {
+            "startDate": "2018-04-06",
+            "endDate": "2019-4-05"
+        },
+        "taxYear": "2018-19",
+        "requestedDateTime": "2019-07-07T01:00:00.123Z",
+        "bsasId": "12345678-1234-123-123-123456789012",
+        "summaryStatus": "valid",
+        "adjustedSummary": false
+    },
+    "selfEmployment" : {
+        "total" : {
+            "totalIncome": 123.45,
+            "totalExpenses": 123.45,
+            "totalAdditions": 123.45,
+            "totalDeductions": 123.45
+        },
+        "profit": {
+            "netProfit": 123.45,
+            "taxableProfit": 123.45
+        },
+        "loss": {
+            "netLoss": 123.45,
+            "taxableLoss": 123.45
+        },
+        "totalIncomeBreakdown": {
+            "turnover": 123.45,
+            "other": 123.45
+        },
+        "totalExpensesBreakdown": {
+            "costOfGoodsBought": {
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "cisPaymentsToSubContractors": {
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "staffCosts": {
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "travelCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "premisesRunningCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "maintenanceCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "adminCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "advertisingCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "businessEntertainmentCosts":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "interest":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "financialCharges":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "badDebt":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "professionalFees":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "depreciation":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "other":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            },
+            "consolidatedExpenses":{
+                "amount": 123.45,
+                "disallowableAmount": 123.45
+            } 
+        }
+    }
+}</code></pre><p><strong>example-2</strong>:<br>FHL Property BSAS</p><pre><code>{
+    "metadata": {
+        "typeOfBusiness": "self-employment",
+        "selfEmploymentId": "XAIS12345678912",
+        "accountingPeriod" : {
+            "startDate": "2018-04-06",
+            "endDate": "2019-4-05"
+        },
+        "taxYear": "2018-19",
+        "requestedDateTime": "2019-07-07T01:00:00.123Z",
+        "bsasId": "12345678-1234-123-123-123456789012",
+        "summaryStatus": "valid",
+        "adjustedSummary": false
+    },
+    "furnishedHolidayLet": {
+        "total" : {
+            "totalIncome": 123.45,
+            "totalExpenses": 123.45,
+            "totalAdditions": 123.45,
+            "totalDeductions": 123.45
+        },
+        "profit": {
+            "netProfit": 123.45,
+            "taxableProfit": 123.45
+        },
+        "loss": {
+            "netLoss": 123.45,
+            "taxableLoss": 123.45
+        },
+        "totalIncomeBreakdown": {
+            "rentIncome": {
+                "amount": 123.45
+            },
+            "rarRentReceived": 123.45
+        },
+        "totalExpensesBreakdown": {
+            "premisesRunningCosts": 123.45,
+            "repairsAndMaintenance": 123.45,
+            "financialCosts": 123.45,
+            "professionalFees": 123.45,
+            "travelCosts": 123.45,
+            "costOfServices": 123.45,
+            "other": 123.45,
+            "rarReliefClaimed": 123.45,
+            "consolidatedExpenses": 123.45
+        }
+    }
+}</code></pre><p><strong>example-3</strong>:<br>Non-FHL BSAS</p><pre><code>{
+    "metadata": {
+        "typeOfBusiness": "self-employment",
+        "selfEmploymentId": "XAIS12345678912",
+        "accountingPeriod" : {
+            "startDate": "2018-04-06",
+            "endDate": "2019-4-05"
+        },
+        "taxYear": "2018-19",
+        "requestedDateTime": "2019-07-07T01:00:00.123Z",
+        "bsasId": "12345678-1234-123-123-123456789012",
+        "summaryStatus": "valid",
+        "adjustedSummary": false
+    },
+    "nonFurnishedHolidayLettings": {
+        "total" : {
+            "totalIncome": 123.45,
+            "totalExpenses": 123.45,
+            "totalAdditions": 123.45,
+            "totalDeductions": 123.45
+        },
+        "profit": {
+            "netProfit": 123.45,
+            "taxableProfit": 123.45
+        },
+        "loss": {
+            "netLoss": 123.45,
+            "taxableLoss": 123.45
+        },
+        "totalIncomeBreakdown": {
+            "rentIncome": {
+                "amount": 123.45
+            },
+            "premiumsOfLeaseGrant": 123.45,
+            "reversePremiums": 123.45,
+            "otherPropertyIncome": 123.45,
+            "rarRentReceived": 123.45
+        },
+        "totalExpensesBreakdown": {
+            "premisesRunningCosts": 123.45,
+            "repairsAndMaintenance": 123.45,
+            "financialCosts": 123.45,
+            "professionalFees": 123.45,
+            "travelCosts":  123.45,
+            "costOfServices": 123.45,
+            "residentialFinancialCost": 123.45,
+            "other": 123.45,
+            "rarReliefClaimed": 123.45,
+            "consolidatedExpenses": 123.45
+        }        
+    }
+}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/400" target="_blank">400</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><strong>Properties</strong><ul><li><strong>code</strong>: <em><span class="required">required</span>(string)</em></li></ul><p><strong>Examples</strong>:</p><div class="examples"><p><strong>formatNino</strong>:<br>The format of the supplied NINO field is not valid</p><pre><code>{
+  "code": "FORMAT_NINO"
+}</code></pre><p><strong>formatBsasId</strong>:<br>The format of the given tax year is invalid</p><pre><code>{
+  "code": "FORMAT_BSAS_ID"
+}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/403" target="_blank">403</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><strong>Properties</strong><ul><li><strong>code</strong>: <em><span class="required">required</span>(string)</em></li></ul><p><strong>Example</strong>:</p><div class="examples"><p><strong>clientOrAgentNotAuthorised</strong>:<br>The client and/or agent is not authorised. This is normally because: the client is not subscribed to MTD, the agent is not subscribed to Agent Services, or the client has not authorised the agent to act on their behalf.</p><pre><code>{
+  "code": "CLIENT_OR_AGENT_NOT_AUTHORISED"
+}</code></pre></div><h2>HTTP status code <a href="http://httpstatus.es/404" target="_blank">404</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><strong>Properties</strong><ul><li><strong>code</strong>: <em><span class="required">required</span>(string)</em></li></ul><p><strong>Examples</strong>:</p><div class="examples"><p><strong>notFound</strong>:<br>The matching resource is not found.</p><pre><code>{
+  "code": "MATCHING_RESOURCE_NOT_FOUND"
+}</code></pre><p><strong>noAdjustments</strong>:<br>An adjusted summary calculation does not exist</p><pre><code>{
+  "code": "RULE_NO_ADJUSTMENTS_MADE"
+}</code></pre></div></div><div class="tab-pane" id="individuals_accounting__nino__business_summary__bsasid__get_securedby"><h1>Secured by</h1></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#individuals_accounting">/individuals/accounting</a></li></ul></div></div></div></div></body></html>

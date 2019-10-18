@@ -1,0 +1,36 @@
+is:
+  - headers.acceptJson
+  - headers.contentTypeJson
+  - headers.testScenarioHeader
+  - errors.formatNino
+  - errors.formatBsasId
+  - errors.formatAdjustedStatus
+  - errors.notFound
+  - errors.noAdjustments
+  - errors.clientOrAgentNotAuthorised
+  - queryParameters.adjustedStatus
+
+displayName: Retrieve a Business Source Accounting Summary [test only]
+description: This endpoint allows users to retreive a Business Source Accounting Summary.
+# (annotations.sandboxData): !include scenarios/broughtForwardLosses_create.md
+(annotations.scope): "write:self-assessment"
+securedBy: [ sec.oauth_2_0: { scopes: [ "write:self-assessment" ] } ]
+responses:
+  200:
+    headers:
+      X-CorrelationId:
+        example: c75f40a6-a3df-4429-a697-471eeec46435
+        description: Unique ID for operation tracking <br> String, 36 characters.
+    body:
+      application/json:
+        type: !include schemas/bsas/bsas_response.json
+        examples:
+          example-1:
+            description: Self Employment BSAS
+            value: !include examples/bsas/se_bsas.json
+          example-2:
+            description: FHL Property BSAS
+            value: !include examples/bsas/fhl_bsas.json 
+          example-3:
+            description: Non-FHL BSAS
+            value: !include examples/bsas/non_fhl_bsas.json       

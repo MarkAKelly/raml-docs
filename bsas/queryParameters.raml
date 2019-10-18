@@ -9,7 +9,7 @@ traits:
       taxYear:
         description: 'The tax year the data applies to, for example, 2019-20. The start year and end year must not span two tax years. No gaps are allowed, for example, 2019-21 is not valid. The minimum tax year is 2019-20.'
         example: "2019-20"
-        required: false
+        required: true
   typeOfBusiness:
     queryParameters:
       typeOfBusiness:
@@ -20,3 +20,12 @@ traits:
     queryParameters:
       selfEmploymentId:
         description: 'An identifier for the self-employment business, unique to the customer.  <b>Must conform to the regular expression <ul><li>`^X[A-Z0-9]{1}IS[0-9]{11}$` </b>'
+        example: XAIS12345678901
+        required: false
+  adjustedStatus:
+    queryParameters:
+      adjustedStatus:
+        description: To specify which of the original - unadjusted - summary or the adjusted summary is to be returned. If not specified the adjusted summary will be returned, where it exists. The original summary is returned, otherwise.      
+        type: boolean
+        example: true
+        required: false
